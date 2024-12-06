@@ -1,0 +1,7 @@
+[Unit]
+Description=Clear the contents of ~/.local/src/ and ~/.cache/aur/ directories 
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sh -c 'rm -rf "${HOME}/.local/src/"*'
+ExecStart=/usr/bin/sh -c 'rm -rf "${HOME}/.cache/aur/"*'

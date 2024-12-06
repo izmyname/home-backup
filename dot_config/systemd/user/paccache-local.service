@@ -1,0 +1,6 @@
+[Unit]
+Description=Remove cached local AUR package archives.
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/paccache -c ${HOME}/.cache/pacman/pkg -rk0

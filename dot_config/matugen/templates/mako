@@ -1,0 +1,7 @@
+background-color={{ colors.background.default.hex }}cc
+text-color={{ colors.on_background.default.hex }}f4
+border-color={{colors.primary.default.hex}}fa
+progress-color=over {{colors.tertiary.default.hex}}fa
+
+[urgency=high]
+border-color={{colors.error_container.default.hex}}fa

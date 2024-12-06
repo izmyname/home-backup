@@ -1,0 +1,69 @@
+[config]
+
+[config.wallpaper]
+command = "hyprctl"
+arguments = ["hyprpaper", "reload", ","]
+set = true
+
+[templates.waybar-calendar]
+input_path='./templates/waybar-calendar.jsonc'
+output_path='~/.config/waybar/modules/date.jsonc'
+post_hook = 'systemctl --user restart waybar.service'
+
+[templates.fuzzel]
+input_path = './templates/fuzzel.ini'
+output_path = '~/.config/fuzzel/matugen.ini'
+
+[templates.foot]
+input_path = './templates/foot.ini'
+output_path = '~/.config/foot/matugen.ini'
+post_hook = 'systemctl --user restart foot-server.service'
+
+[templates.mako]
+input_path = './templates/mako'
+output_path = '~/.config/mako/matugen'
+post_hook = 'makoctl reload'
+
+[templates.hyprland]
+input_path = './templates/hyprland.conf'
+output_path = '~/.config/hypr/colors/matugen-hypr.conf'
+post_hook = 'hyprctl reload'
+
+[templates.gtk3]
+input_path = './templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+post_hook = 'systemctl --user restart waybar.service'
+
+[templates.gtk4]
+input_path = './templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+
+[templates.kvantum]
+input_path = './templates/kvantum'
+output_path = '~/.config/Kvantum/KvGnomeDark#/KvGnomeDark#.kvconfig'
+
+[templates.qt]
+input_path = './templates/qt-colors.conf'
+output_path = '~/.config/hypr/colors/matugen-qt.conf'
+post_hook='systemctl --user restart hyprpolkitagent.service'
+
+[templates.swayimg]
+input_path = './templates/swayimg'
+output_path = '~/.config/swayimg/config'
+
+[templates.bat]
+input_path = "./templates/bat.tmTheme"
+output_path = "~/.config/bat/themes/matugen.tmTheme"
+post_hook = "bat cache --build"
+
+[templates.nvchad]
+input_path = "./templates/nvchad.lua"
+output_path = "~/.config/nvim/lua/themes/matugen.lua"
+
+[templates.rmpc]
+input_path="./templates/rmpc.ron"
+output_path="~/.config/rmpc/themes/matugen.ron"
+
+[templates.yazi]
+input_path="./templates/yazi.toml"
+output_path="~/.config/yazi/theme.toml"

@@ -1,0 +1,111 @@
+{
+// Global configuration
+"include": [
+    "~/.config/waybar/modules/date.jsonc"
+  ],
+"layer": "top",
+"position": "top",
+"spacing": 10,
+"fixed-center": true,
+"margin-left": 10,
+"margin-right": 10,
+"modules-left": ["hyprland/workspaces", "hyprland/window"],
+"modules-center": ["group/time"],
+"modules-right": ["tray", "group/indicators", "upower"],
+
+// Module Groups
+
+"group/time": {
+	  "orientation": "inherit",
+		"modules": ["clock#date", "clock#time"]
+	},
+
+"group/indicators": {
+	  "orientation": "inherit",
+		"modules": ["hyprland/language", "wireplumber", "network", "bluetooth"]
+	},
+
+// Modules
+
+"hyprland/language": {
+    "format": "{short}",
+    "keyboard-name": "at-translated-set-2-keyboard",
+    "on-click": "$HOME/.local/bin/lang"
+},
+
+"network": {
+    "format-wifi": "{icon}",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "tooltip-format-wifi": "{essid}   {signalStrength}%",
+    "format-ethernet": "",
+    "tooltip-format-ethernet": "{ifname}  {ipaddr}",
+    "format-disconnected": "",
+    "tooltip-format-disconnected": "Disconnected",
+    "format-disabled": "",
+    "tooltip-format-disabled": "No internet",
+    "on-click": "uwsm app -- networkmanager_dmenu"
+},
+
+"bluetooth": {
+	  "format": "<span size='15pt'></span>",
+	  "format-disabled": "",
+    "format-connected": "<span size='15pt'>󰂱</span>",
+    "format-icons": ["󰁺","󰁼","󰁾","󰂁","󰁹"],
+	  "tooltip-format": "No connected devices",
+	  "tooltip-format-connected": "{num_connections} connected\n\n{device_enumerate}",
+	  "tooltip-format-enumerate-connected": "{device_alias}",
+	  "tooltip-format-enumerate-connected-battery": "{device_alias}   {icon}{device_battery_percentage}%",
+    "on-click": "uwsm app -- blueman-manager"
+},
+
+"clock#time": {
+    "interval": 1,
+    "format": "{:%H:%M}",
+    "tooltip": true,
+    "tooltip-format": "{:%H:%M:%S  %Z}"
+    },
+
+"hyprland/window": {
+    "format": "",
+    "tooltip": false
+    },
+
+"hyprland/workspaces": {
+    "all-outputs": false,
+    "disable-scroll": false,
+    "format": "{name}",
+    "show-special": true,
+    "special-visible-only": true
+    },
+
+"tray": {
+    "icon-size": 16,
+    "spacing": 10,
+    "reverse-direction": true
+    },
+
+"wireplumber": {
+    "format": "{icon}",
+    "format-muted": "",
+    "states": {
+        "loud": 75,
+        "optimal": 50
+    },
+    "on-click": "$HOME/.local/bin/wpctl-volume --toggle",
+    "on-click-right": "flatpak run com.saivert.pwvucontrol",
+    "on-click-middle": "flatpak run com.github.wwmm.easyeffects",
+    "on-scroll-up": "$HOME/.local/bin/wpctl-volume --inc",
+    "on-scroll-down": "$HOME/.local/bin/wpctl-volume --dec",
+    "max-volume": 100,
+    "format-icons": ["", ""],
+    "tooltip": true,
+    "tooltip-format": "{node_name}   {volume}%"
+  },
+
+"upower": {
+    "icon-size": 16,
+    "hide-if-empty": true,
+    "tooltip": true,
+    "tooltip-spacing": 20,
+},
+}

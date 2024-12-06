@@ -1,0 +1,6 @@
+[Context]
+sockets=wayland
+filesystems=xdg-config/gtk-3.0:ro;/home/arch-mage/.local/share/icons:ro;xdg-config/gtk-4.0:ro;xdg-config/Kvantum:ro
+
+[Environment]
+QT_STYLE_OVERRIDE=kvantum

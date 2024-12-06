@@ -1,0 +1,26 @@
+{
+    "terminal.integrated.defaultProfile.linux": "zsh (2)",
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.colorTheme": "HyprLuna Material",
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.titleBarStyle": "native",
+    "git.autofetch": true,
+    "workbench.colorCustomizations": {},
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "python.autoComplete.extraPaths": [
+        "./**"
+    ],
+    "workbench.iconTheme": "fira-code-material-minimal",
+
+    "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "workbench.startupEditor": "none",
+    "vsicons.dontShowNewVersionMessage": true,
+    "explorer.confirmDragAndDrop": false,
+    "prettier.bracketSameLine": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}

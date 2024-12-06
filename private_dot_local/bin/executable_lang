@@ -1,0 +1,16 @@
+#!/usr/bin/sh
+
+# dependency: jq
+
+icon="keyboard" # notification icon from a system icon theme
+
+# get a keyboard layoyt name
+get_lang() {
+  lang=$(hyprctl devices -j | jq -r '.keyboards[] | select(.name == "at-translated-set-2-keyboard") | .active_keymap')
+
+  echo $lang
+}
+
+hyprctl switchxkblayout at-translated-set-2-keyboard next # use Hyprland dispatcher to switch keyboard layout
+
+notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$icon" "keyboard" "$(get_lang)" # send a notification

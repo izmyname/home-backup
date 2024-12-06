@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+# a workaround for using a terminal of choice for Terminal=true, until Glib devs implement their spec.
+$TERMINAL "$@"

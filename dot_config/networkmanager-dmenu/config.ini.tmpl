@@ -1,0 +1,24 @@
+[dmenu]
+dmenu_command = fuzzel --dmenu --width=70 --lines=25
+active_chars = 
+wifi_chars = ▂▄▆█
+wifi_icons = 󰤯󰤟󰤢󰤥󰤨
+format = {icon}  {name}  {bars}  {sec}
+prompt = NetworkManager ❯
+
+[dmenu_passphrase]
+obscure = True
+obscure_color = #12121e
+show_pass = {{ env "TERMINAL"}} --hold -T nmcli-password nmcli device wifi show-password
+
+[pinentry]
+# description = <Pinentry description> (Default: Get network password)
+# prompt = <Pinentry prompt> (Default: Password:)
+
+[editor]
+# terminal = <name of terminal program> <arguments>
+# gui_if_available = <True or False> (Default: True)
+# gui = <name of gui editor> (Default: nm-connection-editor)
+
+[nmdm]
+# rescan_delay = 2 

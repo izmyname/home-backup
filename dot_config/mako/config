@@ -1,0 +1,14 @@
+font=FiraCode Nerd Font Mono 12
+width=350
+height=3500
+padding=10
+max-history=30
+margin=5
+border-size=2
+border-radius=10
+default-timeout=5000
+layer=overlay
+icons=1
+icon-path=/usr/share/icons/Papirus-Dark
+
+include=~/.config/mako/matugen

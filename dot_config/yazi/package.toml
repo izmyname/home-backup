@@ -1,0 +1,12 @@
+[[plugin.deps]]
+use = "boydaihungst/gvfs"
+rev = "f07b496"
+hash = "162bf7326809fb2b831d7fac7525b067"
+
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "c264639"
+hash = "e17c11b605d989568a1d1741ca17c584"
+
+[flavor]
+deps = []

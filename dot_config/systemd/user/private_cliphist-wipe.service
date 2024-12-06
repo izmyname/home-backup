@@ -1,0 +1,7 @@
+[Unit]
+Description=Clear clipboard
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/cliphist wipe
+

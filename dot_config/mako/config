@@ -1,0 +1,20 @@
+font=FiraCode Nerd Font Mono 12
+width=350
+height=3500
+padding=10
+max-history=30
+margin=10
+border-size=2
+border-radius=0
+default-timeout=5000
+layer=overlay
+icons=1
+icon-path=/usr/share/icons/Papirus-Dark
+background-color=#1a0000cc
+text-color=#d8d8e8f4
+border-color=#7a8a4dfa
+progress-color=over #750b12
+on-button-middle=exec makoctl menu fuzzel --dmenu -p 'action >'
+
+[urgency=high]
+border-color=#750b12

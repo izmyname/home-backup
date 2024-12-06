@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=footclient -D %U
+Icon=foot
+Terminal=false
+Categories=System;TerminalEmulator;
+Keywords=shell;prompt;command;commandline;
+
+Name=Footclient handler
+GenericName=Terminal
+Comment= footclient handler for inode/directory

@@ -1,0 +1,6 @@
+[Context]
+sockets=wayland;fallback-x11;
+filesystems=xdg-config/gtk-3.0;/home/arch-mage/.local/share/icons:ro;xdg-config/gtk-4.0;xdg-config/Kvantum:ro;xdg-config/qt6ct:ro;
+
+[Environment]
+QT_STYLE_OVERRIDE=kvantum

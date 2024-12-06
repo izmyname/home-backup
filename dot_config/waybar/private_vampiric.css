@@ -1,0 +1,7 @@
+@define-color base #1a0000; /*darkblood*/
+@define-color text #edb7c0; /*bloodmoon*/
+@define-color warning #f38ba8; /*scarlet*/
+@define-color critical #9b1120; /*crimson*/
+@define-color shadow #1c1d2e; /*crypt*/
+@define-color border #12121e; /*eternaldusk*/
+@define-color mute #7980a0;  /*ashenveil*/

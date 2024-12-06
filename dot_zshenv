@@ -1,0 +1,8 @@
+export ZDOTDIR=$HOME/.config/zsh  #set the location for the rest of zsh files
+
+# set environment variables, that do not depend on graphical session
+export PATH=$HOME/.local/bin:$PATH
+export EDITOR=nvim
+export VISUAL=$EDITOR
+export LC_TIME=en_GB.UTF-8  # for time and date format
+export PYTHONSTARTUP=$HOME/.config/python/pythonrc # set path to python config

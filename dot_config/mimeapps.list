@@ -1,0 +1,14 @@
+
+[Default Applications]
+audio/flac=mpv.desktop
+audio/mp3=mpv.desktop
+audio/wav=mpv.desktop
+text/plain=nvim.desktop
+image/jpeg=swayimg.desktop
+image/jpg=swayimg.desktop
+image/png=swayimg.desktop
+image/gif=swayimg.desktop
+image/svg=swayimg.desktop
+image/webp=swayimg.desktop
+image/bmp=swayimg.desktop
+inode/directory=nnn.desktop

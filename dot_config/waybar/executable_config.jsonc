@@ -1,0 +1,119 @@
+{
+    // Global configuration
+
+    "layer": "top",
+    "position": "top",
+    "height": 42,
+    "spacing": 10,
+    "fixed-center": true,
+    "margin-left": 0,
+    "margin-right": 0,
+    "modules-left": ["custom/arch", "hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["group/time"],
+    "modules-right": ["tray", "hyprland/language", "wireplumber", "network", "bluetooth", "backlight", "upower"],
+
+    // Module Groups
+
+"group/time": {
+	"orientation": "inherit",
+		"modules": ["clock#time", "clock#date"]
+	},
+
+    // Modules
+
+"hyprland/language": {
+    "format": "{short}",
+    "keyboard-name": "at-translated-set-2-keyboard",
+    "on-click": "$HOME/.local/bin/lang"
+},
+
+"bluetooth": {
+  	"format": "󰂯",
+	  "format-disabled": "󰂲",
+  	"format-connected": "",
+  	"tooltip-format": "{controller_alias}\t{controller_address}",
+  	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+  	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click-right": "$TERMINAL -T bluetui bluetui"
+},
+
+"backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "on-scroll-up": "$HOME/.local/bin/backlight --inc",
+    "on-scroll-down": "$HOME/.local/bin/backlight --dec",
+    "scroll-step": 0.1,
+    "tooltip": true,
+    "tooltip-format": "{percent}%"
+},
+
+"clock#time": {
+        "interval": 1,
+        "format": " {:%H:%M}",
+        "tooltip": false
+    },
+
+"clock#date": {
+        "interval": 1,
+        "format": " {:L%a %d %b}",
+        "tooltip": false,
+    },
+
+"network": {
+        "interval": 5,
+        "format-wifi": "", 
+        "format-ethernet": "", 
+        "format-disconnected": "",
+        "tooltip-format": "{ifname}:{essid} {ipaddr}",
+        "on-click-right": "uwsm app -- networkmanager_dmenu"
+    },
+
+"hyprland/window": {
+        "format": ""
+    },
+
+"hyprland/workspaces": {
+        "all-outputs": false,
+        "disable-scroll": true,
+        "format": "{name}",
+        "show-special": true,
+        "special-visible-only": true
+    },
+
+"tray": {
+        "icon-size": 16,
+        "spacing": 10,
+        "reverse-direction": true
+    },
+
+"wireplumber": {
+    "format": "{icon}",
+    "format-muted": "",
+    "states": {
+        "loud": 75,
+        "optimal": 50
+    },
+    "on-click": "$HOME/.local/bin/wpctl-volume --toggle",
+    "on-click-right": "flatpak run org.pipewire.Helvum",
+    "on-click-middle": "flatpak run com.github.wwmm.easyeffects ",
+    "on-scroll-up": "$HOME/.local/bin/wpctl-volume --inc",
+    "on-scroll-down": "$HOME/.local/bin/wpctl-volume --dec",
+    "max-volume": 100,
+    "format-icons": ["", ""],
+    "tooltip": true,
+    "tooltip-format": "{node_name}  {volume}%"
+  },
+
+"custom/arch": {
+      "format": "",
+      "tooltip": false,
+    },       
+
+"upower": {
+     "icon-size": 16,
+     "hide-if-empty": true,
+     "tooltip": true,
+     "tooltip-spacing": 20
+},
+}

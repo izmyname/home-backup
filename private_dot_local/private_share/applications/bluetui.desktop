@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Bluetui
+Comment=TUI Bluetooth Manager
+Icon=bluetooth
+Exec=-T bluetui bluetui
+Terminal=true
+Type=Application
+Categories=Settings;HardwareSettings;

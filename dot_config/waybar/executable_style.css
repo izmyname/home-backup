@@ -1,0 +1,171 @@
+@import "vampiric.css";
+
+/* The whole bar */
+#waybar {
+    border-radius: 0px;
+    background: alpha(@base, 0.8);
+    border:  1px solid @border;
+    text-shadow: 1px 1px @shadow;
+    color: @text;
+    font-family: FiraCode Nerd Font Propo;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    font-size: 16px;
+}
+
+/* All modules */
+#backlight,
+#bluetooth,
+#time,
+#network,
+#wireplumber,
+#tray,
+#window,
+#workspaces,
+#language,
+#upower,
+#custom-arch {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* Module styling */
+
+#backlight {
+  /*No Styles*/
+}
+
+#bluetooth {
+  /*No styles*/
+}
+
+#bluetooth.connected {
+   color: @attention;
+}
+
+#bluetooth.disabled {
+   color: @mute;
+}
+
+#clock.time {
+  padding-right: 10px;
+}
+
+#clock.date {
+  /*No Styles*/
+}
+
+#network {
+  /*No styles*/
+}
+
+#network.disconnected {
+    color: @mute;
+}
+
+#wireplumber {
+    /* No styles */
+}
+
+#wireplumber.loud {
+     color: @critical;
+}
+
+#wireplumber.optimal {
+     color: @attention;
+}
+
+#wireplumber.muted {
+     color: @mute;
+ }
+
+#tray {
+    /*No Style*/
+}
+
+#window {
+    padding-left: 10px;
+    border: none;	
+    color: transparent;
+    background-color: transparent;
+    text-shadow: none;
+}
+
+#waybar.fullscreen #window {
+   color: @text;
+   text-shadow: none;
+}
+
+#workspaces button {
+    border-radius: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: @text;
+    text-shadow: 1px 1px @shadow;
+}
+
+#workspaces button.active {
+    border-radius: 0px;
+    margin-top: 2px;    
+    margin-bottom: 2px; 
+    border-color: @base;
+    color: @base;
+    background-color: @text; 
+    text-shadow: none;
+}
+
+#workspaces button.urgent {
+    border-radius: 0px;
+    margin-top: 2px;    
+    margin-bottom: 2px; 
+    border-color: @base;
+    color: @base;
+    background-color: @attention;
+    text-shadow: none;
+}
+
+#workspaces button.special {
+    border-radius: 0px;
+    margin-left:5px;
+    margin-top: 2px;    
+    margin-bottom: 2px; 
+    border-color: @base;
+    color: @base;
+    background-color: @critical; 
+    text-shadow: none;
+}
+
+#language {
+  font-weight: bold;
+}
+
+#upower {
+  margin-right:10px;
+}
+
+
+#upower.empty {
+   color: @critical;
+}
+
+#custom-arch {
+  margin-left: 15px;
+}
+
+/* Tooltips styling */
+tooltip {
+     border-radius: 0px;
+     background-color: alpha (@base, 0.6);
+}
+
+tooltip label {
+  color: @text;
+}
+
+menu {
+	border-radius: 0px;
+	background: alpha (@base, 0.6);
+	color: @text;
+}
+menuitem {
+	border-radius: 0px;
+}

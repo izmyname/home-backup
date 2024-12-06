@@ -1,0 +1,13 @@
+# source xdg-user-dirs
+source $HOME/.config/user-dirs.dirs
+
+# source local config
+for conf in "$HOME/.config/zsh/zshrc.d/"*.zsh; do
+  source "${conf}"
+done
+unset conf
+
+# source system-wide plugins
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh    
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh

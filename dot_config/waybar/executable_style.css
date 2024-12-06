@@ -1,0 +1,189 @@
+@import "colors.css";
+
+#waybar {
+    border-radius: 10px;
+    background: transparent;
+    color: @on_background;
+    font-family: FiraCode Nerd Font Propo;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    font-size: 16px;
+}
+
+/*All modules*/
+#custom-arch,
+#workspaces,
+#window,
+#time,
+#tray,
+#language,
+#connect,
+#wireplumber,
+#power {
+    background: alpha(@background, 0.8);
+    border:0.5px solid @primary;
+    border-radius:10px;
+    margin-top:2px;
+    margin-bottom:2px;
+    padding-left:5px;
+    padding-right:5px;
+  
+}
+
+#wireplumber {
+    padding-left: 10px;
+    padding-right: 15px; /*Extra padding to compensate the icon smaller size*/
+}
+
+#wireplumber.loud {
+    color: @error_container;
+    padding-right: 10px;
+}
+
+#wireplumber.optimal {
+    color: @inverse_primary;
+    padding-right: 10px;
+}
+
+#wireplumber.muted {
+    color: @surface_variant;
+    padding-right: 10px;
+ }
+
+#tray {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#window {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: transparent;
+    border:0.5px solid transparent;
+    background-color: transparent;
+}
+
+#waybar.fullscreen #window {
+    color: @on_background;
+    border:0.5px solid @primary;
+    background: alpha(@background, 0.8);
+}
+
+#workspaces button {
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: @on_background;
+}
+
+#workspaces button.active {
+    border-radius: 10px;
+    margin-left:2px;
+    margin-right:2px;
+    color: @background;
+    background-color: @on_background; 
+}
+
+#workspaces button.urgent {
+    border-radius: 10px;
+    margin-left:2px;
+    margin-right:2px;
+    color: @background;
+    background-color: @inverse_primary;
+}
+
+#workspaces button.special {
+    border-radius: 10px;
+    margin-left:2px;
+    margin-right:2px;
+    color: @background;
+    background-color: @primary_fixed; 
+}
+
+#language {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+
+#custom-arch {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Time module group*/
+
+#clock.time {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+#clock.date {
+    font-weight: 500;
+    padding-right: 15px;
+    margin-left: 10px;
+}
+
+/* Connect module group */
+
+#bluetooth {
+    padding-right: 15px; /*Extra padding to compensate the icon smaller size*/
+}
+
+#bluetooth.connected {
+    color: @inverse_primary;
+    padding-right: 10px;
+}
+
+#bluetooth.disabled {
+    color: @surface_variant;
+}
+
+#network {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#network.disconnected {
+    color: @on_tertiary_container;
+}
+
+#network.disabled {
+    color: @surface_variant;
+}
+
+/* Power module group*/
+
+#upower {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#upower.empty {
+    color: @error_container;
+}
+
+#custom-power {
+    margin-right: 10px;
+}
+
+/* Tooltips styling */
+tooltip {
+    border-radius: 10px;
+    background-color: alpha (@background, 0.8);
+}
+
+tooltip label {
+    color: @on_background;
+}
+
+menu {
+	  border-radius: 10px;
+	  background: alpha (@background, 0.8);
+	  color: @on_background;
+}
+menuitem {
+	  border-radius: 10px;
+}

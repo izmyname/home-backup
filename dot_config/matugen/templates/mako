@@ -1,0 +1,19 @@
+font=FiraCode Nerd Font Mono 12
+width=350
+height=3500
+padding=10
+max-history=30
+margin=5
+border-size=2
+border-radius=10
+default-timeout=5000
+layer=overlay
+icons=1
+icon-path=/usr/share/icons/Papirus-Dark
+background-color={{ colors.background.default.hex }}cc
+text-color={{ colors.on_background.default.hex }}f4
+border-color={{colors.primary.default.hex}}fa
+progress-color=over {{colors.tertiary.default.hex}}fa
+
+[urgency=high]
+border-color={{colors.error_container.default.hex}}fa

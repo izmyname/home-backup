@@ -1,0 +1,77 @@
+[config]
+
+[config.wallpaper]
+command = "hyprctl"
+arguments = ["hyprpaper", "reload", ","]
+set = true
+
+[templates.hyprpaper]
+input_path = './templates/hyprpaper.conf'
+output_path = '~/.config/hypr/hyprpaper.conf'
+
+[templates.waybar-calendar]
+input_path='./templates/waybar-calendar.jsonc'
+output_path='~/.config/waybar/modules/date.jsonc'
+post_hook = 'systemctl --user restart waybar.service'
+
+[templates.waybar]
+input_path = './templates/css-colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'systemctl --user restart waybar.service'
+
+[templates.fuzzel]
+input_path = './templates/fuzzel.ini'
+output_path = '~/.config/fuzzel/colors.ini'
+
+[templates.foot]
+input_path = './templates/foot.ini'
+output_path = '~/.config/foot/colors.ini'
+post_hook = 'systemctl --user restart foot-server.service'
+
+[templates.mako]
+input_path = './templates/mako'
+output_path = '~/.config/mako/config'
+post_hook = 'makoctl reload'
+
+[templates.hyprland]
+input_path = './templates/hyprland.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+
+[templates.kvantum]
+input_path = '~/.config/matugen/templates/kvantum'
+output_path = '~/.config/Kvantum/KvGnomeDark#/KvGnomeDark#.kvconfig'
+
+[templates.qtct]
+input_path = '~/.config/matugen/templates/qtct-colors.conf'
+output_path = '~/.config/hypr/qt_theme.conf'
+post_hook='systemctl --user restart hyprpolkitagent.service'
+
+[templates.swayimg]
+input_path = '~/.config/matugen/templates/swayimg'
+output_path = '~/.config/swayimg/config'
+
+[templates.bat]
+input_path = "~/.config/matugen/templates/bat.tmTheme"
+output_path = "~/.config/bat/themes/matugen.tmTheme"
+post_hook = "bat cache --build"
+
+[templates.nvchad]
+input_path = "~/.config/matugen/templates/nvchad.lua"
+output_path = "~/.config/nvim/lua/themes/matugen.lua"
+
+[templates.rmpc]
+input_path="./templates/rmpc.ron"
+output_path="~/.config/rmpc/themes/matugen.ron"
+
+[templates.yazi]
+input_path="./templates/yazi.toml"
+output_path="~/.config/yazi/theme.toml"

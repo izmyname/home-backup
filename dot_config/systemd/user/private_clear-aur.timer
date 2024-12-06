@@ -1,0 +1,11 @@
+[Unit]
+Description=Clear local package source and aur PKGBUILD directories weekly
+
+[Timer]
+OnCalendar=weekly
+AccuracySec=1h
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

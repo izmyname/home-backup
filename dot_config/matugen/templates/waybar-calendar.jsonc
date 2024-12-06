@@ -1,0 +1,18 @@
+{
+"clock#date": {
+    "interval": 1,
+    "format": "{:L%a %d %b}",
+    "locale": "en_GB.UTF-8",
+    "tooltip": true,
+    "tooltip-format": "<span size='14pt'>{calendar}</span>",
+        "calendar": {
+                    "mode"          : "month",
+                    "format": {
+                              "months":     "<span color='{{ colors.on_primary_container.default.hex }}'>{}</span>",
+                              "days":       "<span color='{{ colors.on_surface.default.hex }}'>{}</span>",
+                              "weekdays":   "<span color='{{ colors.tertiary.default.hex }}'>{}</span>",
+                              "today":      "<span color='{{ colors.inverse_primary.default.hex }}'><b>{}</b></span>"
+                              }
+                    }
+    }
+}

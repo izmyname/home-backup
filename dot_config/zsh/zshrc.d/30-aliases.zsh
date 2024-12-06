@@ -1,0 +1,27 @@
+alias ls='lsd'
+alias grep='rg'
+alias cat='bat'
+alias less='bat'
+alias df='duf'
+alias du='dua'
+alias find='fd'
+alias free='free -h'
+alias lstrash='trash-list'
+alias untrash='trash-restore'
+alias purgetrash='trash-empty -f --all-users'
+alias inxi="inxi -c11"
+alias yazi='y'
+alias edit=nvim
+alias vim=nvim
+alias vimdiff='nvim -d'
+alias git-pull-all='\find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull' #pull all repos up to level 3 dir, at once.
+alias makepkg-install-clean='makepkg -sric'
+alias flatinstall='flatpak install --user'
+alias flatupdate='flatpak update --user'
+alias flatpurge='flatpak uninstall --delete-data --user'
+alias flatlist='flatpak list --app'
+alias flatlistall='flatpak list'
+alias flatclean='flatpak uninstall --unused --user'
+alias flatfix='flatpak repair --user'
+alias pacclean='pacman -Qtdq | sudo pacman -Rns - ; pacman -Qqd | sudo pacman -Rsu -'
+alias wget='wget --hsts-file=$HOME/.cache/hsts-file'

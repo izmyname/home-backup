@@ -1,0 +1,153 @@
+@import "vampiric.css";
+
+#waybar {
+    border-radius: 0px;
+    background: alpha(@base, 0.9);
+    border-bottom:  1px solid @border;
+    color: @text;
+    font-family: FiraCode Nerd Font Propo;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    font-size: 16px;
+}
+
+
+#wireplumber {
+    /* No styles */
+}
+
+#wireplumber.loud {
+    color: @critical;
+}
+
+#wireplumber.optimal {
+    color: @attention;
+}
+
+#wireplumber.muted {
+    color: @mute;
+ }
+
+#tray {
+    margin-right:10px;
+}
+
+#window {
+    padding-left: 10px;
+    border: none;	
+    color: transparent;
+    background-color: transparent;
+}
+
+#waybar.fullscreen #window {
+    color: @text;
+}
+
+#workspaces button {
+    border-radius: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: @text;
+}
+
+#workspaces button.active {
+    border-radius: 0px;
+    margin-left:2px;
+    margin-right:2px;
+    color: @base;
+    background-color: @text; 
+}
+
+#workspaces button.urgent {
+    border-radius: 0px;
+    margin-left:2px;
+    margin-right:2px;
+    color: @base;
+    background-color: @attention;
+}
+
+#workspaces button.special {
+    border-radius: 0px;
+    margin-left:2px;
+    margin-right:2px;
+    color: @base;
+    background-color: @critical; 
+}
+
+#language {
+    font-weight: bold;
+}
+
+
+#custom-arch {
+    margin-left: 15px;
+}
+
+/*Time module group*/
+
+#clock.time {
+    font-weight: 500;
+}
+
+#clock.date {
+    font-weight: 500;
+    padding-right: 15px;
+}
+
+/* Connect module group */
+
+#bluetooth {
+    margin-right: 10px;
+}
+
+#bluetooth.connected {
+    color: @attention;
+}
+
+#bluetooth.disabled {
+    color: @mute;
+}
+
+#network {
+    /* No styles */
+}
+
+#network.disconnected {
+    color: @attention-alt;
+}
+
+#network.disabled {
+    color: @mute;
+}
+
+/* Power module group*/
+
+#upower {
+    margin-right: 10px;
+}
+
+#upower.empty {
+    color: @critical;
+}
+
+#custom-power {
+    margin-right: 15px;
+}
+
+/* Tooltips styling */
+tooltip {
+    border-radius: 0px;
+    background-color: alpha (@base, 0.8);
+}
+
+tooltip label {
+    color: @text;
+}
+
+menu {
+	  border-radius: 0px;
+	  background: alpha (@base, 0.8);
+	  color: @text;
+}
+menuitem {
+	  border-radius: 0px;
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/sh
+
+# set default values for night and day monitor temperature
+temp_night=3400
+temp_day=6500
+
+# toggle day and night monitor temperature
+toggle_nightlight() {
+  current_temp=$(hyprctl hyprsunset temperature)
+
+  if [[ "$current_temp" == "$temp_day" ]]; then
+    hyprctl hyprsunset temperature "$temp_night"
+    brightnessctl -s set 50%
+    notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i redshift "hyprsunset" "nightlight is on"
+  else
+    hyprctl hyprsunset temperature "$temp_day"
+    brightnessctl -r
+    notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i sunflower "hyprsunset" "nightlight is off"
+  fi
+}
+
+toggle_nightlight

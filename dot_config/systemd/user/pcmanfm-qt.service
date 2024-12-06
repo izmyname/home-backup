@@ -1,0 +1,14 @@
+[Unit]
+Description=PCManFM-Qt file manager - daemon mode
+PartOf=graphical-session.target
+After=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+	
+[Service]
+ExecStart=/usr/bin/pcmanfm-qt --daemon-mode
+Slice=session.slice
+TimeoutStopSec=5sec
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

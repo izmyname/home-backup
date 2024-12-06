@@ -1,0 +1,243 @@
+@import "vampiric.css";
+
+/* The whole bar */
+#waybar {
+    border-radius: 10px;
+    background: transparent;
+    text-shadow: 1px 1px @shadow;
+    color: @text;
+    font-family: FiraCode Nerd Font Propo;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    font-size: 16px;
+}
+
+/* All modules */
+#custom-arch,
+#hardware,
+#hardware2,
+#indicators,
+#connect,
+#time,
+#window,
+#wireplumber,
+#workspaces,
+#language,
+#tray {
+  border-radius: 0px;
+  border:  1px solid @border;
+  background-color: alpha(@base, 0.8);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 10px;
+}
+
+/* Module styling */
+#time {
+      font-size: 14px;
+}
+
+#indicators {
+      font-size: 14px;
+}
+
+#hardware {
+      font-size:14px;
+}
+
+#hardware2 {
+      padding-left:5px;
+      padding-right:5px;
+      font-size:14px;
+}
+
+#backlight {
+    padding-left:8px;
+    padding-right:5px;
+}
+
+#bluetooth {
+  padding-left:5px;
+  padding-right:5px;
+}
+
+#bluetooth.connected {
+   color: @warning;
+}
+
+#bluetooth.disabled {
+   color: grey;
+}
+
+#cpu {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#cpu.warning {
+    color: @warning;
+}
+
+#cpu.critical {
+    color: @critical;
+}
+
+#disk {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#disk.three-quarters {
+  color: @warning;
+}
+
+#disk.full {
+  color: @critical;
+}
+
+#clock.time {
+  padding-left:5px;
+  padding-right:5px;
+  margin-right:5px;
+}
+
+#clock.date {
+  padding-left:5px;
+  padding-right:5px;
+}
+
+#memory {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#memory.warning {
+    color: @warning;
+}
+
+#memory.critical {
+    color: @critical;
+}
+
+#network {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#network.disconnected {
+    color: grey;
+}
+
+#wireplumber {
+    /* No styles */
+}
+
+#wireplumber.loud {
+     color: @critical;
+}
+
+#wireplumber.optimal {
+     color: @warning;
+}
+
+#wireplumber.muted {
+     color: grey;
+ }
+
+#tray {
+     margin-right: 10px;
+}
+
+#window {
+    border: none;	
+    color: transparent;
+    background-color: transparent;
+    text-shadow: none;
+}
+
+#waybar.fullscreen #window {
+   color: @text;
+   background-color: alpha (@base, 0.8);
+   text-shadow: none;
+}
+
+#workspaces button {
+    border-radius: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: @text;
+    text-shadow: 1px 1px @shadow;
+}
+
+#workspaces button.active {
+    border-radius: 0px;
+    margin-top: 2px;    
+    margin-bottom: 2px; 
+    border-color: @base;
+    color: @base;
+    background-color: @text; 
+    text-shadow: none;
+}
+
+#workspaces button.urgent {
+    border-radius: 0px;
+    margin-top: 2px;    
+    margin-bottom: 2px; 
+    border-color: @base;
+    color: @base;
+    background-color: @warning;
+    text-shadow: none;
+}
+
+#workspaces button.special {
+    border-radius: 0px;
+    margin-left:5px;
+    margin-top: 2px;    
+    margin-bottom: 2px; 
+    border-color: @base;
+    color: @base;
+    background-color: @critical; 
+    text-shadow: none;
+}
+
+#temperature {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#temperature.critical {
+    color: @critical;
+}
+
+#upower {
+   padding-left:5px;
+   padding-right:5px;
+}
+
+#upower.empty {
+   color: @critical;
+}
+
+#custom-arch {
+  color: @blue;
+}
+
+/* Tooltips styling */
+tooltip {
+     border-radius: 0px;
+     background-color: alpha (@base, 0.6);
+}
+
+tooltip label {
+  color: @text;
+}
+
+menu {
+	border-radius: 0px;
+	background: alpha (@base, 0.6);
+	color: @text;
+}
+menuitem {
+	border-radius: 0px;
+}

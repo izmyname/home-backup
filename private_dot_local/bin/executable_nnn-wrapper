@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# nnn config
+source $HOME/.config/zsh/zshrc.d/50-config-nnn.zsh
+
+# To use a CLI opener, specify the `-c` option to `nnn`
+# export NNN_OPENER="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/plugins/nuke"
+
+# Unmask ^Q (if required, see `stty -a`) to Quit nnn
+stty start undef
+stty stop undef
+
+# Start nnn with your preferred options
+nnn "$@"

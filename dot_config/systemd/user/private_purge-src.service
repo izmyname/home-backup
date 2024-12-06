@@ -1,0 +1,6 @@
+[Unit]
+Description=Clear ~/.local/src directory 
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sh -c 'rm -rf "${HOME}/.local/src/"*'

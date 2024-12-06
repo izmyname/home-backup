@@ -1,0 +1,4 @@
+export AQ_DRM_DEVICES=/dev/dri/card1   # use iGPU for rendering  (lspci | \grep -E 'VGA|3D', then ls -l /dev/dri/by-path)
+export HYPRCURSOR_THEME=bibata-vampiric
+export HYPRCURSOR_SIZE=24
+export QT_QPA_PLATFORMTHEME=hyprqt6engine

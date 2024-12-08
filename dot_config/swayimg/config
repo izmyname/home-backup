@@ -39,6 +39,8 @@ window = #1e1e2ecc
 transparency = grid
 # Default image scale (optimal/fit/width/height/fill/real)
 scale = optimal
+# Initial image position
+position = center
 # Fix position of the image on the window surface (yes/no)
 fixed = yes
 # Anti-aliasing (yes/no)
@@ -99,7 +101,9 @@ size = 14
 # Font color (RGBA)
 color = #cdd6f4ff
 # Shadow color (RGBA)
-shadow = #11111ba0
+shadow = ##11111ba0
+# Background color (RGBA)
+background = #18182500
 
 ################################################################################
 # Image meta info scheme (format, size, EXIF, etc)

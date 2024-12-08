@@ -5,4 +5,5 @@ export PATH=$HOME/.local/bin:$PATH
 export EDITOR=nvim
 export VISUAL=$EDITOR
 export LC_TIME=en_GB.UTF-8  # for time and date format
-export PYTHONSTARTUP=$HOME/.config/python/pythonrc # put python_history under .cache
+export PYTHONSTARTUP=$HOME/.config/python/pythonrc # set path to python config
+export WGETRC=$HOME/.config/wget/wgetrc # set path to wget config

@@ -19,7 +19,7 @@
 
 
 >[!IMPORTANT]
->The setup relies on systemd with [uwsm](https://github.com/Vladimir-csp/uwsm) to manage graphical session startup. The [shell profile](https://github.com/izmyname/home-backup/blob/main/dot_zprofile) is used instead of a display manager.
+>The setup relies on systemd with [uwsm](https://github.com/Vladimir-csp/uwsm) to manage graphical session startup. The [shell profile](https://github.com/izmyname/home-backup/blob/main/dot_config%2Fzsh%2Fdot_zprofile) is used instead of a display manager.
 
 >[!NOTE]
 >Most apps are started either as systemd services, or by using xdg-autostart desktop files (uwsm allows this).

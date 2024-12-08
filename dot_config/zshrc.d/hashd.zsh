@@ -12,3 +12,4 @@ hash -d zsh=$HOME/.config/zshrc.d
 hash -d hypr=$HOME/.config/hypr
 hash -d bgs=$HOME/.local/share/backgrounds
 hash -d bin=$HOME/.local/bin
+hash -d aconfmgr=$HOME/.config/aconfmgr

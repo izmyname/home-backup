@@ -41,7 +41,7 @@
 + <b>Music player:</b> _mpd+mpc+slightly modified [fzmp script](https://github.com/izmyname/home-backup/blob/main/private_dot_local/bin/executable_fzmp)_
 + <b>Fonts:</b> _Fira Code, Fira Code-nerd, Awesome, Noto fonts, Noto fonts-emoji_ 
 + <b>Some flatpaks inside hyprland and waybar configs:</b> _com.github.wwmm.easyeffects org.mozilla.firefox org.pipewire.Helvum org.telegram.desktop pw.mmk.OpenFreebuds_
-+ <b>The rest:</b> _Hyprland default apps listed [inside the config](https://github.com/izmyname/home-backup/blob/main/dot_config/hypr/hyprland.conf.d/50-var.conf)_
++ <b>The rest:</b> _Hyprland default apps listed [inside the config](https://github.com/izmyname/home-backup/blob/main/dot_config/hypr/hyprland.conf.d/60-exec.conf)_
 
 
 ### Theming

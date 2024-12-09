@@ -1,1 +1,0 @@
-export DIFFPROG='nvim -d'

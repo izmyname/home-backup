@@ -1,2 +1,0 @@
-export RCLONE_PROGRESS=true
-export RCLONE_HUMAN_READABLE=true

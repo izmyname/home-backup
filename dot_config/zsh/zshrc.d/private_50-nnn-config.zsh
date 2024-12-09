@@ -1,3 +1,4 @@
+# this config is sourced inside ~/.local/bin/nwrap, so we keep it separated
 export NNN_OPTS='ex'
 export NNN_TERMINAL='foot -T nnnpreviewwindow'
 export NNN_BATTHEME=$BAT_THEME

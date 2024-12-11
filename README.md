@@ -33,7 +33,7 @@
 + <b>Terminal:</b> _Foot_
 + <b>Launcher:</b> _Fuzzel_
 + <b>Notifications:</b> _mako ([keyboard](https://github.com/izmyname/home-backup/blob/main/private_dot_local/bin/executable_lang), [wireplumber](https://github.com/izmyname/home-backup/blob/main/private_dot_local/bin/executable_wpctl-volume), [backlight](https://github.com/izmyname/home-backup/blob/main/private_dot_local/bin/executable_backlight) notification scripts)_
-+ <b>File manager:</b> _nnn (compiled with nerd icons) ([wrapper script](https://github.com/izmyname/home-backup/blob/main/private_dot_local/bin/executable_nwrap))_ 
++ <b>File manager:</b> _pcmanfm-qt and nnn (compiled with nerd icons) ([wrapper script](https://github.com/izmyname/home-backup/blob/main/private_dot_local/bin/executable_nwrap))_ 
 + <b>lockscreen and idle daemon:</b> _Hyprlock + Hypridle_
 + <b>Wallpaper:</b> _Hyprpaper ([swww-like script](https://github.com/izmyname/home-backup/blob/main/private_dot_local/bin/executable_setbg))_
 + <b>Nightlight:</b> _Hyprsunset ([toggle script](https://github.com/izmyname/home-backup/blob/main/private_dot_local/bin/executable_nightlight))_

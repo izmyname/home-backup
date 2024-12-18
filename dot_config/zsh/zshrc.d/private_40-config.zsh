@@ -1,5 +1,4 @@
 # bat
-export BAT_THEME="Catppuccin Mocha"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
 
@@ -13,6 +12,9 @@ export DIFFPROG='nvim -d'
 # rclone
 export RCLONE_PROGRESS=true
 export RCLONE_HUMAN_READABLE=true
+
+# autosuggestion
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#f38ba8"
 
 # zsh history substring search
 bindkey -M vicmd 'k' history-substring-search-up

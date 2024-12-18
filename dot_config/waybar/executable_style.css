@@ -1,10 +1,10 @@
-@import "mocha.css";
+@import "vampiric.css";
 
 /* The whole bar */
 #waybar {
     border-radius: 10px;
     background: transparent;
-    text-shadow: 1px 1px @crust;
+    text-shadow: 1px 1px @shadow;
     color: @text;
     font-family: FiraCode Nerd Font Propo;
     font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
@@ -43,27 +43,17 @@
 
 #hardware {
       font-size:14px;
-      color: @pink;
 }
 
 #hardware2 {
       padding-left:5px;
       padding-right:5px;
       font-size:14px;
-      color: @mauve;
 }
 
 #backlight {
     padding-left:8px;
     padding-right:5px;
-}
-
-#backlight.medium {
-     color: @peach;
-}
-
-#backlight.max {
-     color: @yellow;
 }
 
 #bluetooth {
@@ -72,7 +62,7 @@
 }
 
 #bluetooth.connected {
-   color: @blue;
+   color: @warning;
 }
 
 #bluetooth.disabled {
@@ -84,16 +74,12 @@
     padding-right:5px;
 }
 
-#cpu.loaded {
-    color: @sapphire;
-}
-
 #cpu.warning {
-    color: @peach;
+    color: @warning;
 }
 
 #cpu.critical {
-    color: @red;
+    color: @critical;
 }
 
 #disk {
@@ -101,33 +87,23 @@
     padding-right:5px;
 }
 
-#disk.half {
-  color: @sapphire;
-}
-
 #disk.three-quarters {
-  color: @peach;
+  color: @warning;
 }
 
 #disk.full {
-  color: @red;
-}
-
-#language {
- color: @teal;
+  color: @critical;
 }
 
 #clock.time {
   padding-left:5px;
   padding-right:5px;
   margin-right:5px;
-  color: @sky;
 }
 
 #clock.date {
   padding-left:5px;
   padding-right:5px;
-  color: @mauve;
 }
 
 #memory {
@@ -135,22 +111,17 @@
     padding-right:5px;
 }
 
-#memory.loaded {
-    color: @sapphire;
-}
-
 #memory.warning {
-    color: @peach;
+    color: @warning;
 }
 
 #memory.critical {
-    color: @red;
+    color: @critical;
 }
 
 #network {
     padding-left:5px;
     padding-right:5px;
-    color: @rosewater;
 }
 
 #network.disconnected {
@@ -162,11 +133,11 @@
 }
 
 #wireplumber.loud {
-     color: @red;
+     color: @critical;
 }
 
 #wireplumber.optimal {
-     color: @green;
+     color: @warning;
 }
 
 #wireplumber.muted {
@@ -195,7 +166,7 @@ window#waybar.fullscreen #window {
     padding-left: 5px;
     padding-right: 5px;
     color: @text;
-    text-shadow: 1px 1px @crust;
+    text-shadow: 1px 1px @shadow;
 }
 
 #workspaces button.active {
@@ -212,9 +183,9 @@ window#waybar.fullscreen #window {
     border-radius: 10px;
     margin-top: 2px;    
     margin-bottom: 2px; 
-    border-color: @peach;
+    border-color: @warning;
     color: @base;
-    background-color: @red;
+    background-color: @warning;
     text-shadow: none;
 }
 
@@ -225,7 +196,7 @@ window#waybar.fullscreen #window {
     margin-bottom: 2px; 
     border-color: @text;
     color: @base;
-    background-color: @lavender; 
+    background-color: @warning; 
     text-shadow: none;
 }
 
@@ -235,7 +206,7 @@ window#waybar.fullscreen #window {
 }
 
 #temperature.critical {
-    color: @red;
+    color: @critical;
 }
 
 #upower {
@@ -243,16 +214,8 @@ window#waybar.fullscreen #window {
    padding-right:5px;
 }
 
-#upower.charging {
-   color: @sky;
-}
-
-#upower.full {
-   color: @green;
-}
-
 #upower.empty {
-   color: @red;
+   color: @critical;
 }
 
 #custom-arch {

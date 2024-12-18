@@ -62,7 +62,6 @@
     "format": " {percentage_used}%",
     "path": "/",
     "states": {
-        "half": 50,
         "three-quarters": 75,
         "full": 90
     },
@@ -72,10 +71,6 @@
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
     "format-icons": ["", "", "", "", "", "", "", "", ""],
-    "states": {
-       "max": 100,
-       "medium": 60
-},
     "tooltip": true,
     "tooltip-format": "{percent}%"
 },
@@ -96,7 +91,6 @@
         "interval": 5,
         "format": " {usage}%",
         "states": {
-          "loaded": 40,
           "warning": 70,
           "critical": 90
         }
@@ -106,7 +100,6 @@
         "interval": 5,
         "format": " {}%",
         "states": {
-          "loaded": 40,
           "warning": 70,
           "critical": 90
         },

@@ -47,8 +47,5 @@
 
 ### Theming
 
-+ <b>Theme:</b> _catppuccin-mocha_
++ <b>Theme:</b> _custom crimson theme_
 + <b>Icon theme:</b> _Papirus Dark_
-+ <b>Firefox theme:</b> _[catppuccin mocha lavender](https://github.com/catppuccin/firefox)_
-+ <b>Dark reader and vimium themes:</b>  _[here](https://github.com/izmyname/home-backup/tree/main/private_dot_local/private_share/firefox)_
-+ <b>Qbittorrent theme:</b>  _[here](https://github.com/izmyname/home-backup/tree/main/private_dot_local/private_share/qbittorrent)._

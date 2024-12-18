@@ -34,7 +34,7 @@ app_id = swayimg
 ################################################################################
 [viewer]
 # Window background color (RGBA)
-window = #1e1e2ecc
+window = #1a0000b3
 # Background for transparent images (grid/RGBA)
 transparency = grid
 # Default image scale (optimal/fit/width/height/fill/real)
@@ -67,15 +67,15 @@ fill = yes
 # Use anti-aliasing for thumbnails (yes/no)
 antialiasing = no
 # Background color of the window (RGBA)
-window = #1e1e2ecc
+window = #1a0000b3
 # Background color of the tile (RGBA)
-background = #202020ff
+background = #cdd6f4ff
 # Background color of the selected tile (RGBA)
-select = #181825ff
+select = #9b111eff
 # Border color of the selected tile (RGBA)
-border = #89b4faff
+border = #000000ff
 # Shadow color of the selected tile (RGBA)
-shadow = #11111bff
+shadow = #000000ff
 
 ################################################################################
 # Image list configuration
@@ -101,9 +101,9 @@ size = 14
 # Font color (RGBA)
 color = #cdd6f4ff
 # Shadow color (RGBA)
-shadow = ##11111ba0
+shadow = #000000b3
 # Background color (RGBA)
-background = #18182500
+background = #000000b3
 
 ################################################################################
 # Image meta info scheme (format, size, EXIF, etc)
